@@ -1,0 +1,72 @@
+.team-cont {
+    width: 85%;
+    margin: 100px auto;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-col {
+    display: flex;
+    width: 100%;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.team-pic {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 80px;
+}
+
+.team-bio {
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 10px;
+    line-height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .team-cont {
+        width: 70%;
+        margin: 100px auto;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-member {
+        display: flex;
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .team-pic {
+        border-radius: 20px;
+        background-size: auto, cover;
+    }
+
+    #carlos {
+        height: 300px;
+        width: 1200px;
+        background-image: linear-gradient(130deg, rgba(255, 255, 255, 0.212), rgba(63, 148, 245, 0.322)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Carlos%20Miceli%20Avatar.jpg?alt=media&token=04eacce4-9aa5-495d-a431-3fc526ee0755);
+    }
+
+    #kadri {
+        height: 300px;
+        width: 1200px;
+        background-image: linear-gradient(130deg, rgba(255, 255, 255, 0.212), rgba(63, 112, 245, 0.26)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/qLpd6Bfw%20copy.jpg?alt=media&token=a34073fb-e4d6-457b-b286-72f9772bce6f);
+    }
+
+    .team-bio {
+        text-align: left;
+        padding: 20px 50px;
+        line-height: 25px;
+    }
+}

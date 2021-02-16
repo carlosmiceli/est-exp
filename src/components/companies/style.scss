@@ -1,0 +1,21 @@
+.companies-cont {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.companies-logos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    justify-content: space-around;
+
+}
+
+.logo {
+    width: 40%;
+    margin: 10px;
+}

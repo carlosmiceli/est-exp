@@ -1,0 +1,294 @@
+.cards-cont {
+    overflow: visible;
+    height: 70vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.cards-heading {
+    margin-bottom: 80px;
+}
+
+.cards-slider {
+    overflow:hidden;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "option1 active active active option5"
+        "option2 active active active option6"
+        "option3 active active active option7"
+        "option4 active active active option8";
+
+    .option {
+        position: relative;
+        overflow: hidden;
+        min-width:65px;
+        min-height:65px;
+        max-width:65px;
+        max-height:65px;
+        margin:0 10px;
+        cursor: pointer;
+        
+        &.active {
+            grid-area: active;
+            max-height: 400px;
+            min-width:100%;
+            margin:0px;
+            border-radius:40px;
+            animation: fadein 1s;
+            animation-delay: 1s;
+        }
+
+        &.option1, .option2, .option3, .option4, .option5, .option6, .option7, .option8  {
+            animation: fadein 1s;
+            animation-delay: 1s;
+        }
+
+        &.switched {
+            animation: fadeout 1s;
+        }
+
+        &.option1 {
+            grid-area: option1;
+        }
+
+        &.option2 {
+            grid-area: option2;
+        }
+
+        &.option3 {
+            grid-area: option3;
+        }
+
+        &.option4 {
+            grid-area: option4;
+        }
+
+        &.option5 {
+            grid-area: option5;
+        }
+
+        &.option6 {
+            grid-area: option6;
+        }
+
+        &.option7 {
+            grid-area: option7;
+        }
+
+        &.option8 {
+            grid-area: option8;
+        }
+    }  
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+.card-quote {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    border-left-style: none;
+    transform: scale3d(1none, 1none, 1none) translate(0px, 0px);
+    color: hsla(0, 0.00%, 100.00%, 1.00);
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-shadow: 1px 1px 6px hsla(0, 0.00%, 14.67%, 1.00);
+    transition: opacity .4s ease-in .3s;
+    opacity: 1;
+    
+    &.hidden {
+        display: none;
+        // opacity: 0;
+        // transition: opacity .1s ease-out;
+    }
+}
+
+.card-model {
+    height: 400px;
+    justify-self: center;
+    display: flex;
+    border-radius: 20px;
+    align-items: flex-end;
+    background-size: auto, cover;
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+#card-services {
+    background-image: linear-gradient(176deg, hsla(0, 0.00%, 100.00%, 0.25) 33%, hsla(112, 25.49%, 46.22%, 1.00) 86%), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/estonia-forest.jpg?alt=media&token=fb4dd6c0-33ca-4d22-a4d3-5128b2b12c70);
+    background-position: 0px 0px, 50% 50%;
+}
+
+#card-obama {
+    background-image: linear-gradient(178deg, hsla(0, 0.00%, 100.00%, 0.25), hsla(228, 77.14%, 56.25%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/barack-obama.jpg?alt=media&token=01dc8e45-4a18-451e-be6b-47f5b172c183);
+    background-position: 0px 0px, 80% 50%;
+}
+  
+#card-pope {
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, hsla(0, 0.00%, 100.00%, 0.25), hsla(228, 0.00%, 38.00%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Pope-Francis-e-resident.jpg?alt=media&token=82a4dbf7-8390-4d8b-923f-738ccde7eb2e);
+    background-position: 0px 0px, 80% 50%;
+}
+
+#card-forest {
+    background-image: linear-gradient(to bottom, hsla(0, 0.00%, 100.00%, 0.25) 43%, hsla(33, 77.14%, 56.25%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Varbola-Internet-Exchange-e1362368316107.jpg?alt=media&token=70a72bb1-5f45-480e-a44a-f30f34381f38);
+    background-position: 0px 0px, 80% 50%;
+}
+
+#card-school {
+    background-image: linear-gradient(178deg, hsla(0, 0.00%, 100.00%, 0.25), hsla(351, 13.03%, 53.24%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/virtual-learning-online-learn-students-remote-work-school-1626640-pxhere.com.jpg?alt=media&token=7db165c5-04ae-4073-a136-fcaea12115f6);
+    background-position: 0px 0px, 90% -40%;
+    background-size: auto, 600px;
+}
+
+#card-vote {
+    background-image: linear-gradient(175deg, hsla(0, 0.00%, 100.00%, 0.25) 65%, hsla(228, 0.00%, 27.33%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/istock-696745420.jpg?alt=media&token=863b2880-bd8e-4824-878e-6099a8cc5f57);
+}
+
+#card-visa {
+    background-image: linear-gradient(to bottom, hsla(0, 0.00%, 17.33%, 0.51), transparent 23%), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/1_SkA7aLRXV96ECKqBlALiZA.jpeg?alt=media&token=7b770644-4efc-411c-b96d-51b2306aadf6);
+    background-position: 0px 0px, 50% 50%;
+}
+
+#card-nations {
+    background-image: linear-gradient(to top, hsla(0, 0.00%, 100.00%, 0.25) 66%, hsla(226, 100.00%, 83.04%, 0.91)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/foto-grupal-d9.jpg?alt=media&token=da7e1917-5170-4be3-b3c2-7fb4d9438a86);
+    background-position: 0px 0px, 50% 50%;
+}
+
+#card-wall {
+    background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.00), hsla(0, 0.00%, 66.00%, 0.55)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Fastest-growing-estonian-startups-Lift99.png?alt=media&token=adef50ab-eda6-464e-9f82-d94106a89496);
+    background-position: 0px 0px, 50% 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    .cards-cont {
+        display: flex;
+        overflow: visible;
+        height: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    .cards-heading {
+        margin-bottom: 119px;
+    }
+    
+    #cards-grid {
+        display: grid;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 25px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .card-quote {
+        position: relative;
+        z-index: 0;
+        margin-bottom: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        border-left-style: none;
+        transform: scale3d(1none, 1none, 1none) translate(0px, 0px);
+        color: hsla(0, 0.00%, 100.00%, 1.00);
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-shadow: 1px 1px 6px hsla(0, 0.00%, 14.67%, 1.00);
+    }
+    
+    .card-model {
+        justify-self: center;
+        display: flex;
+        border-radius: 20px;
+        align-items: flex-end;
+        background-size: auto, cover;
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    
+    #card-services {
+
+        background-image: linear-gradient(176deg, hsla(0, 0.00%, 100.00%, 0.25) 33%, hsla(112, 25.49%, 46.22%, 1.00) 86%), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/estonia-forest.jpg?alt=media&token=fb4dd6c0-33ca-4d22-a4d3-5128b2b12c70);
+        background-position: 0px 0px, 50% 50%;
+    }
+    
+    #card-obama {
+
+        background-image: linear-gradient(178deg, hsla(0, 0.00%, 100.00%, 0.25), hsla(228, 77.14%, 56.25%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/barack-obama.jpg?alt=media&token=01dc8e45-4a18-451e-be6b-47f5b172c183);
+        background-position: 0px 0px, 80% 50%;
+    }
+      
+    #card-pope {
+
+        background-image: radial-gradient(circle farthest-corner at 50% 50%, hsla(0, 0.00%, 100.00%, 0.25), hsla(228, 0.00%, 38.00%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Pope-Francis-e-resident.jpg?alt=media&token=82a4dbf7-8390-4d8b-923f-738ccde7eb2e);
+        background-position: 0px 0px, 80% 50%;
+    }
+    
+    #card-forest {
+
+        background-image: linear-gradient(to bottom, hsla(0, 0.00%, 100.00%, 0.25) 43%, hsla(33, 77.14%, 56.25%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Varbola-Internet-Exchange-e1362368316107.jpg?alt=media&token=70a72bb1-5f45-480e-a44a-f30f34381f38);
+        background-position: 0px 0px, 80% 50%;
+    }
+    
+    #card-school {
+        height: 225px;
+        background-image: linear-gradient(178deg, hsla(0, 0.00%, 100.00%, 0.25), hsla(351, 13.03%, 53.24%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/virtual-learning-online-learn-students-remote-work-school-1626640-pxhere.com.jpg?alt=media&token=7db165c5-04ae-4073-a136-fcaea12115f6);
+        background-position: 0px 0px, 90% 40%;
+        background-size: auto, 600px;
+    }
+    
+    #card-vote {
+        height: 250px;
+        background-image: linear-gradient(175deg, hsla(0, 0.00%, 100.00%, 0.25) 65%, hsla(228, 0.00%, 27.33%, 1.00)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/istock-696745420.jpg?alt=media&token=863b2880-bd8e-4824-878e-6099a8cc5f57);
+    }
+    
+    #card-visa {
+        background-image: linear-gradient(to bottom, hsla(0, 0.00%, 17.33%, 0.51), transparent 23%), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/1_SkA7aLRXV96ECKqBlALiZA.jpeg?alt=media&token=7b770644-4efc-411c-b96d-51b2306aadf6);
+        background-position: 0px 0px, 50% 50%;
+    }
+    
+    #card-nations {
+        height: 250px;
+        background-image: linear-gradient(to top, hsla(0, 0.00%, 100.00%, 0.25) 66%, hsla(226, 100.00%, 83.04%, 0.91)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/foto-grupal-d9.jpg?alt=media&token=da7e1917-5170-4be3-b3c2-7fb4d9438a86);
+    }
+    
+    #card-wall {
+
+        background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.00), hsla(0, 0.00%, 66.00%, 0.55)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Fastest-growing-estonian-startups-Lift99.png?alt=media&token=adef50ab-eda6-464e-9f82-d94106a89496);
+        background-position: 0px 0px, 50% 50%;
+    }
+}

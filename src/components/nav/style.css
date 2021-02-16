@@ -1,0 +1,106 @@
+  .navbar-cont {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content-mobile {
+    display: block;
+  }
+
+  .navbar-desktop {
+    display: none;
+  }
+
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 15%;
+  }
+
+  .nav-dropdown-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav-dropdown-button:active {
+    border: none;
+  }
+
+  .nav-dropdown-button-image {
+    max-width: 60%;
+  }
+  
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    min-width: 160px;
+    padding: 4px 14px;
+    z-index: 1;
+    right: 0;
+    background-color: rgba(255, 255, 255);
+    border-color: #555555;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+  }
+
+  .nav-title {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-family: "southampton";
+    font-size: 54px;
+    line-height: 35px;
+    font-weight: 400;
+  }
+
+  .nav-link {
+    display: block;
+    color: #555555;
+    padding: 8px 0;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: none;
+  }
+
+
+@media only screen and (min-width: 768px) {
+
+  .content-mobile {display: none}
+
+  .navbar-desktop {
+    display: flex;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    justify-content: space-around;
+    background-color: transparent;
+    font-size: 13px;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: hsla(0, 0.00%, 100.00%, 1.00);
+    font-size: 16px;
+  }
+
+}
