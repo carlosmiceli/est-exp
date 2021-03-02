@@ -1,0 +1,29 @@
+.included-cont {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.included-list {
+    text-align: left;
+    line-height: 22px;
+    color: gray;
+}
+
+.included-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.included-item img {
+    width: 10%;
+}
+
+.included-item p {
+    font-size: 16px;
+    width: 85%;
+    margin: 0 auto;
+}

@@ -24,13 +24,10 @@ const Cards = () => {
                 current: newCardIndex
             })
         }
-        console.log("newInd", newCardIndex)
-        console.log("state", activeCardIndex)
     }
 
     const defOption = (prevIndex) => {
         let opt = "option" + prevIndex
-        console.log("option", opt)
         return opt
     }
 

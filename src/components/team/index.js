@@ -4,7 +4,7 @@ import "./style.css"
 const Team = () => {
     return (
         <div className="team-cont">
-            <h1>Who leads Estonia Experience?</h1>
+            <h1>Founders</h1>
             <div className="team-col">
                 <div className="team-member">
                     <img className="team-pic" src="https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Carlos%20Miceli%20Avatar.jpg?alt=media&token=04eacce4-9aa5-495d-a431-3fc526ee0755"/>
