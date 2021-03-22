@@ -1,7 +1,6 @@
 .team-cont {
     width: 85%;
-    margin: 100px auto;
-    padding-top: 70px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
 }

@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState, useEffect} from 'react'
 import { firestore } from '../../firebase/utils'
-import { Popover, OverlayTrigger } from 'react-bootstrap'
 import './style.scss'
 
 const Companies = () => {
     const [companies, setCompanies] = useState([]);
+    const [popIsOpen, setPopIsOpen] = useState([])
+
+    // const popoverClick = (index => {setPopIsOpen(!popIsOpen[index])})
 
     useEffect (() => {
     firestore
@@ -15,26 +17,61 @@ const Companies = () => {
         res.forEach(dep => {
         tempCompanies.push(dep.data())
         })
+        const popStates = new Array(tempCompanies.length).fill(false)
         setCompanies(tempCompanies)
+        setPopIsOpen(popStates)
     })
     .catch(err => console.log(err))
     }, [])
+
+    useEffect(() => {
+        const popClickEvent = (e) => {
+          if (e.target.id) {
+            let newArr = [...popIsOpen]
+            newArr.fill(false)
+            newArr[e.target.id] = true
+            setPopIsOpen(newArr);
+          }
+          else {
+            let newArr = [...popIsOpen]
+            newArr.fill(false)
+            setPopIsOpen(newArr);
+          }
+        };
+    
+        if (popIsOpen) {
+          window.addEventListener('click', popClickEvent);
+        }
+    
+        return () => {
+          window.removeEventListener('click', popClickEvent);
+        }
+    
+    }, [popIsOpen])
     
     return (
-        <div className="companies-cont">
+        <div id="companies" className="companies-cont">
             <h1 className="companies-heading">Companies we've visited</h1>
             <div className="companies-logos">
-                {companies.map(comp => (
-                    <OverlayTrigger trigger="click" key={comp.name} placement="top" overlay={
-                        <Popover id="popover-basic">
-                            <Popover.Title as ="h3">{comp.name}</Popover.Title>
-                            <Popover.Content>
-                                {comp.description}
-                            </Popover.Content>
-                        </Popover>
-                        }>
-                        <img variant="success" className="logo" src={comp.logo}/>
-                    </OverlayTrigger>
+                {companies.map((comp, index) => (
+                    <div className="popover-cont">
+                        <div className={`popover ${popIsOpen[index] ? 'popover-open' : ""}`} id={index}>
+                            <h3>{comp.name}</h3>
+                            <p>{comp.description}</p>
+                            <a target="_blank" href={comp.url}>Visit website</a>
+                        </div>
+                        <div className={`logo 
+                        ${comp.name === "e-Estonia" 
+                        || comp.name === "Monese" 
+                        || comp.name === "TalTech" 
+                        || comp.name === "EstBAN"
+                        ?
+                        "reduce-logo"
+                        :
+                        ""}`}>
+                            <img variant="success" alt="" id={index} src={comp.logo}/>
+                        </div>
+                    </div>
                 ))}
             </div>
         </div>

@@ -10,7 +10,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const About = () => {
     return (
-        <div className="about-cont">
+        <div id="about" className="about-cont">
             <h1 className="about-heading">What happens in Estonia Experience?</h1>
             <AutoplaySlider 
             animation="foldOutAnimation" 

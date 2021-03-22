@@ -1,27 +1,44 @@
 .hero-cont {
     display: block;
     width: 100%;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding-top: 120px;
+    /* overflow: auto; */
+    position: relative;
 }
 
-.hero-map {
+.hero-cont::before {
+    content: "";
+    position: absolute;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Untitled%20design%20(9).png?alt=media&token=ca94ac3c-0b1a-4932-931a-f5f10df4b2e9');
+    min-height: 400px;
+    left: 0;
+    right: 0;
+    margin-top: -80px;
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
     display: block;
-    margin: 40px auto;
-    height: 35vh;
-    background: url("https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/map.png?alt=media&token=42967a4e-c1ed-417f-bd01-cfb8509cef65");
-    background-position:top;
-    background-size: 220%;
-    background-position-x:50%;
+    z-index: -1;
+    filter        : blur(1px) contrast(60%);
+    -moz-filter   : blur(1px) contrast(60%);
+    -webkit-filter: blur(1px) contrast(60%);
+    -ms-filter    : blur(1px) contrast(60%);
+    -o-filter     : blur(1px) contrast(60%);
 }
 
 .hero-heading {
-    width: 80%;
+    width: 90%;
+    padding-top: 20px;
     margin: 0 auto;
     padding-right: 0px;
-    font-size: 50px;
+    font-size: 46px;
     line-height: 62px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
+    display: block;
+    color: white;
+    text-shadow: 2px 2px 1px black;
 }
 
 .hero-button {
@@ -49,6 +66,13 @@
     justify-content: center;
     align-items: center;
     margin: 20px auto;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.scroll-transparent {
+  opacity: 0;
+  transition-duration: 0.5s;
 }
 
 .scroll-down {

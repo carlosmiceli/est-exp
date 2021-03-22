@@ -1,9 +1,18 @@
   .navbar-cont {
     display: flex;
-    width: 80%;
-    margin: 30px auto;
+    width: 100%;
+    padding: 5px 20px;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    background: transparent;
+    transition-duration: 0.5s;
+    z-index: 9999;
+  }
+
+  .navbar-colored {
+    background: black;
+    transition-duration: 0.5s;
   }
 
   .content-mobile {
@@ -14,40 +23,82 @@
     display: none;
   }
 
+  .alert-cont {
+    width: 40%;
+    padding: auto 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-cont a {
+    width: 70%;
+    text-align: left;
+  }
+
+  .alert-image {
+    max-height: 100px;
+    width: 100%;
+  }
+
   .nav-dropdown {
     position: relative;
     display: inline-block;
-    width: 15%;
+    width: 40%;
+  }
+
+  .nav-dropdown a {
+    width: 100%;
   }
 
   .nav-dropdown-button {
     cursor: pointer;
     background-color: transparent;
     border: none;
+    outline: none;
+    transition: 0.5s;
   }
 
-  .nav-dropdown-button:active {
-    border: none;
+  .nav-dropdown-button-active {
+    transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transition: 0.5s;
   }
 
   .nav-dropdown-button-image {
-    max-width: 60%;
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  .nav-dropdown-image-active {
+    transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transition: 0.5s;
   }
   
   .nav-dropdown-content {
-    display: none;
     position: absolute;
+    border-radius: 8px;
     cursor: pointer;
+    top: 60px;
     min-width: 160px;
     padding: 4px 14px;
     z-index: 1;
     right: 0;
     background-color: rgba(255, 255, 255);
     border-color: #555555;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
   }
 
-  .nav-dropdown:hover .nav-dropdown-content {
-    display: block;
+  .nav-dropdown-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .nav-title {
@@ -57,16 +108,23 @@
     padding-top: 0px;
     padding-bottom: 20px;
     font-family: "southampton";
-    font-size: 54px;
+    font-size: 40px;
     line-height: 35px;
     font-weight: 400;
+    width: 60%;
+    text-align: left;
+  }
+
+  .nav-title a {
+    color: white;
+    text-decoration: none;
   }
 
   .nav-link {
     display: block;
     color: #555555;
     padding: 8px 0;
-    font-size: 20px;
+    font-size: 15px;
     text-align: right;
     text-decoration: none;
   }

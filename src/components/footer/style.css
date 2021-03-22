@@ -1,17 +1,18 @@
 .footer-cont {
     background-color: black;
     color: white;
+    display: flex;
 }
 
 .footer-text {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-.footer-text h4 {
+.footer-cont h4 {
     margin-bottom: 10px;
 }
 
@@ -22,5 +23,23 @@
 }
 
 .footer-text p {
-    font-size: 15px;
+    font-size: 12px;
+}
+
+.footer-social {
+    width: 30%;
+    text-align: left;
+}
+
+.footer-social img {
+    width: 15%;
+}
+
+.footer-author {
+    margin-top: 0;
+}
+
+.footer-author a {
+    color: #F8C217;
+    font-size: 13px;
 }
