@@ -1,12 +1,17 @@
 .sell-cont {
     width: 85%;
-    margin: 20px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.sell-cont h1 {
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .sell-option {
-    position: relative;
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -65,6 +70,7 @@
     position: sticky;
     max-height: 0px; 
     overflow: hidden;
+    transition: max-height 1s;
 }
 
 .application-visible {
@@ -82,3 +88,75 @@
     border-width: 1px;
     color: #808080;
 }
+
+.modal-apply {
+    top: 200px;
+    right: 0;
+    left: 0;
+    width: 85%;
+    min-height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 25px;
+    border-color: black;
+    position: fixed;
+    margin: 0 auto;
+    opacity: 0;
+    z-index: 9998;
+    visibility: hidden;
+    transition: opacity 0.7s ease, visibility 0.7s ease, width 0.7s;
+    background: url("https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Estonia-hero-AdobeStock_176542010.jpeg?alt=media&token=a36ce47b-a304-4f4c-b0bf-c1666c800ec3") center;
+    background-size: cover;
+}
+
+.modal-apply-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-apply-filter {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.modal-apply-filter::before {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    background-color: #000000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: -1
+}
+
+.modal-apply-text {
+    z-index: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    border-left-style: none;
+    transform: scale3d(1none, 1none, 1none) translate(0px, 0px);
+    color: hsla(0, 0.00%, 100.00%, 1.00);
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;;
+    transition: opacity .4s ease-in .3s;
+    opacity: 1;
+}
+

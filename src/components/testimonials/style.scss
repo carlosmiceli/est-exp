@@ -7,7 +7,7 @@
 
 .testimonial-card {
     width: 80%;
-    min-height: 325px;   
+    min-height: 350px;   
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
     justify-content: center;
     border-radius: 10px;
     padding: 3% 0;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
 }
 
@@ -30,9 +30,17 @@
     transition: opacity 1s linear;
 }
 
-.testimonial-pic img {
-    max-width: 35%;
+.testimonial-pic {
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+
+.testimonial-pic-none {
+    display: none
 }
 
 .testimonial-location {

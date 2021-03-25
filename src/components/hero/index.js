@@ -12,12 +12,19 @@ const Hero = () => {
     }
 
     window.addEventListener('scroll', arrowsDisappear)
+
+    const scrollDown = () => {
+        setTimeout(function(){
+            document.getElementById("why-estonia").scrollIntoView();
+          }, 400)
+    }
+
     return (
         <div id="hero" className="hero-cont">
             <div className="hero-columns">
                 <div className="hero-column-1">
                     <h1 className="hero-heading">Explore the most digital country in the world</h1>
-                    <button className="hero-button">Live the Estonia Experience</button>
+                    <button onClick={scrollDown} className="hero-button">Live the Estonia Experience</button>
                 </div>
             </div>
             <div className={`scroll

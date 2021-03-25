@@ -6,8 +6,6 @@ const Companies = () => {
     const [companies, setCompanies] = useState([]);
     const [popIsOpen, setPopIsOpen] = useState([])
 
-    // const popoverClick = (index => {setPopIsOpen(!popIsOpen[index])})
-
     useEffect (() => {
     firestore
     .collection("companies")
@@ -50,7 +48,8 @@ const Companies = () => {
     }, [popIsOpen])
     
     return (
-        <div id="companies" className="companies-cont">
+        <div  className="companies-cont">
+            <div id="companies" className="scroll-margin"/>
             <h1 className="companies-heading">Companies we've visited</h1>
             <div className="companies-logos">
                 {companies.map((comp, index) => (

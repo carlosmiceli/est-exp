@@ -1,20 +1,36 @@
 .about-cont {
-    width: 80%;
+    width: 100vw;
     margin: 0 auto;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
 }
 
 .about-heading {
-    margin-bottom: 40px;
+    margin: 50px auto;
+}
+
+.images-slider {
+    overflow: hidden;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.images-slider-cont {
+    display: flex;
+}
+
+.image-model {
+    height: 300px;
 }
 
 .about-text {
+    width: 85%;
     font-size: 18px;
     align-self: center;
     padding: 0 10px;
     line-height: 30px;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .awssld {
@@ -38,12 +54,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-}
-
-.about-cont img {
-    width: 100% !important;
-    height: 100% !important;
-    position: relative !important;
 }
 
 @media only screen and (min-width: 768px) {

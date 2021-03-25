@@ -8,7 +8,7 @@ const Footer = () => {
                 <h4>Contact Us</h4>
                 <a href="mailto:hello@estoniaexp.com" target="_blank" >hello@estoniaexp.com</a>
                 <br />
-                <p style={{marginBottom: "5px"}}>Estonia Experience © 2018-2021</p>
+                <p>Estonia Experience © 2018-2021</p>
                 <p className="footer-author">Website built by <a href="https://github.com/carlosmiceli">Charly</a></p>
             </div>
             <div className="footer-social">

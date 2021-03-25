@@ -21,10 +21,40 @@ const Cards = () => {
             res.forEach(card => {
                 tempCards.push(card.data())
             })
-            setCards(tempCards)
+            const shuffleCards = (cards) => {
+                for (let i = cards.length - 1; i > 0; i--) {
+                    let j = Math.floor(Math.random() * (i + 1));
+                    let temp = cards[i];
+                    cards[i] = cards[j];
+                    cards[j] = temp;
+                }
+                setCards(cards)
+            }
+            shuffleCards(tempCards)
         })
         .catch(err => console.log(err))
     }, [cards.length])
+
+    const onScroll = () => {
+        if (singleCardRef.current) {
+            for (let i = 0; i <= singleCardRef.current.length; i++) {
+                if (singleCardRef.current[i]) {
+                    const cardPos = singleCardRef.current[i].getBoundingClientRect()
+                    console.log(cardPos)
+                    singleCardRef.current[i].style.zIndex = i + 5
+                    //Opacity Left Side
+                    if (cardPos.right - cardPos.width / 2 < windowWidth * 0.25) {
+                        singleCardRef.current[i].style.opacity = `${100 - (windowWidth * 0.4 - cardPos.right)}%`
+                    }
+                    //Opacity Right Side
+                    else if (cardPos.right > (windowWidth * 0.25)){
+                        singleCardRef.current[i].style.opacity = (windowWidth - cardPos.left * 1.15) / 100
+                    }
+                    else singleCardRef.current[i].style.opacity = 1
+                }
+            }
+        }
+    }
 
     window.addEventListener("mousedown", e => {
         initialPosition = e.pageX;
@@ -60,11 +90,13 @@ const Cards = () => {
 
                     singleCardRef.current[i].style.zIndex = i + 5
 
+                    //Opacity Left Side
                     if (cardPos.right - cardPos.width / 2 < windowWidth * 0.25) {
-                        singleCardRef.current[i].style.opacity = `${100 - (windowWidth * 0.2 - cardPos.right)}%`
+                        singleCardRef.current[i].style.opacity = `${100 - (windowWidth * 0.4 - cardPos.right)}%`
                     }
+                    //Opacity Right Side
                     else if (cardPos.right > (windowWidth * 0.25)){
-                        singleCardRef.current[i].style.opacity = (windowWidth - cardPos.left) / 100
+                        singleCardRef.current[i].style.opacity = (windowWidth - cardPos.left * 1.15) / 100
                     }
                     else singleCardRef.current[i].style.opacity = 1
                 }
@@ -78,8 +110,9 @@ const Cards = () => {
 
     return (
         <div id="why-estonia" className="cards-cont">
+            <div className="scroll-margin" />
             <h1 className="cards-heading">Why Estonia?</h1>
-            <div className="cards-slider">
+            <div className="cards-slider" onScroll={onScroll} style={{ overflowX: "scroll" }}>
                 <div ref={cardsContRef} className="cards-slider-cont">
                     {cards && cards.map((card, index) => {
                         return (
@@ -88,7 +121,9 @@ const Cards = () => {
                             ref={e => singleCardRef.current[index] = e} 
                             className="card-model" 
                             style={{backgroundImage: 'url(' + card.image + ')'}}>
-                                <p>{card.text}</p>
+                                <div className="text-filter">
+                                    <p className="card-quote">{card.text}</p>
+                                </div>
                             </div>
                         )
                     })}

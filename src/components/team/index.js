@@ -3,7 +3,8 @@ import "./style.css"
 
 const Team = () => {
     return (
-        <div id="team" className="team-cont">
+        <div  className="team-cont">
+            <div id="team" className="scroll-margin"/>
             <h1>Founders</h1>
             <div className="team-col">
                 <div className="team-member">
