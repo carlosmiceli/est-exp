@@ -24,7 +24,7 @@ const ContactForm = () => {
         e.target[3].value = ""
         setTimeout(() => {
             handleClose()
-        }, 4000000);
+        }, 4000);
     }
 
     return (
