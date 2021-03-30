@@ -61,7 +61,6 @@ Feel free to email me (Carlos) at [me@carlosmiceli.com](me@carlosmiceli.com) for
 <img width="1280" alt="Screen Shot 2021-03-30 at 1 03 13 AM" src="https://user-images.githubusercontent.com/1166066/112932502-607a9b80-90f4-11eb-8004-d5a1a15c08cc.png">
 <img width="1280" alt="Screen Shot 2021-03-30 at 1 03 15 AM" src="https://user-images.githubusercontent.com/1166066/112932504-61133200-90f4-11eb-99de-d11551ab9cfd.png">
 <img width="1280" alt="Screen Shot 2021-03-30 at 1 03 21 AM" src="https://user-images.githubusercontent.com/1166066/112932507-61abc880-90f4-11eb-90b9-f1a8a8c8562e.png">
+<img width="1280" alt="Screen Shot 2021-03-30 at 1 03 27 AM" src="https://user-images.githubusercontent.com/1166066/112932511-62dcf580-90f4-11eb-88f9-3d22e533a475.png">
 <img width="1280" alt="Screen Shot 2021-03-30 at 1 03 25 AM" src="https://user-images.githubusercontent.com/1166066/112932509-62445f00-90f4-11eb-8cda-a362f7c98921.png"><img width="1280" alt="Screen Shot 2021-03-30 at 1 03 30 AM" src="https://user-images.githubusercontent.com/1166066/112932514-63758c00-90f4-11eb-9fd9-6ab42518d8f6.png">
 <img width="1280" alt="Screen Shot 2021-03-30 at 1 03 36 AM" src="https://user-images.githubusercontent.com/1166066/112932517-640e2280-90f4-11eb-95c4-57d79ef49570.png">
-
-<img width="1280" alt="Screen Shot 2021-03-30 at 1 03 27 AM" src="https://user-images.githubusercontent.com/1166066/112932511-62dcf580-90f4-11eb-88f9-3d22e533a475.png">
