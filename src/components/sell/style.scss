@@ -7,12 +7,13 @@
 }
 
 .sell-cont h1 {
+    font-size: 32px;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
 .sell-option {
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     margin: 30px auto;
@@ -27,6 +28,8 @@
 }
 
 .sell-option h3 {
+    font-size: 24px;
+    line-height: 30px;
     font-weight: 400;
     margin-bottom: 5px;
 }
@@ -78,13 +81,13 @@
     max-height: 300px;
     margin-bottom: 20px;
     transition: max-height 1s;
-    width: 85%;
+    width: 90%;
     margin: auto;
 }
 
 .sell-cont input {
     border: none;
-    border-bottom: groove;
+    border-bottom: solid;
     border-width: 1px;
     color: #808080;
 }
@@ -93,7 +96,7 @@
     top: 200px;
     right: 0;
     left: 0;
-    width: 85%;
+    width: 90%;
     min-height: 200px;
     color: white;
     display: flex;
@@ -145,7 +148,7 @@
     z-index: 0;
     margin: 0 auto;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
@@ -160,3 +163,55 @@
     opacity: 1;
 }
 
+@media only screen and (min-width: 750px) {
+    .sell-description {
+        font-size: 20px;
+    }
+    
+    .sell-option h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .modal-apply-filter {
+        width: 75%;
+    }
+
+    .sell-cont input {
+        font-size: 15px;
+    }
+
+    .sell-cont {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .sell-description {
+        font-size: 20px;
+    }
+    
+    .sell-option h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .modal-apply-filter {
+        width: 75%;
+    }
+
+    .sell-cont input {
+        font-size: 15px;
+    }
+
+    .sell-cont {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .sell-cont {
+        width: 40%;
+    }
+}

@@ -80,7 +80,7 @@ const Testimonials = () => {
                     <div className="testimonial-button right-button" 
                     onClick={() => nextTestimonial()}
                     >
-                        <img alt="" src="https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/icons%2Fright-arrow%20(1).png?alt=media&token=95d39aeb-9aa1-4fee-aa94-b5d74f12582a" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/icons%2Fright-arrow%20(1).png?alt=media&token=95d39aeb-9aa1-4fee-aa94-b5d74f12582a" />
                     </div>
                 </div>
             }

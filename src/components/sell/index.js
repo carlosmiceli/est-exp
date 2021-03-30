@@ -28,7 +28,7 @@ const Sell = () => {
         e.target[3].value = ""
         setTimeout(() => {
             handleClose()
-        }, 4000);
+        }, 10000);
     }
 
     return (
@@ -38,17 +38,17 @@ const Sell = () => {
             <div className={`modal-apply ${openModalApply ? "modal-apply-open" : ""}`}>
                 <div className="modal-apply-filter">
                     <h4 className="modal-apply-text">
-                        Thank you for applying to Estonia Experience! We will be in touch with you soon.
+                        Thank you for applying to Estonia Experience! <br/> We will be in touch with you soon.
                     </h4>
                 </div>
             </div>
             <div className="sell-cols">
                 <div className="sell-option">
-                    <h3>2021 Summer Edition</h3>
+                    <h3>2022 <br/>Summer Edition</h3>
                     <div className="sell-description">
                         <p>Dates: TBD</p>
                         <p>Price: US$ TBD</p>
-                        <p>Applications open until TBD, 2021</p>
+                        <p>Applications open until <br/> TBD, 2022</p>
                     </div>
                     <div className={`${apply ? "apply-disappear" : "apply-visible"}`}>
                         <button onClick={switchApply} className="apply-button">Apply</button>

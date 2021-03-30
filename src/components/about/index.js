@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { firestore } from '../../firebase/utils';
-import "./style.css"
+import "./style.scss"
 
 const About = () => {
     const [images, setImages] = useState([]);
@@ -34,11 +34,11 @@ const About = () => {
         <div  className="about-cont">
             <div id="about" className="scroll-margin"/>
             <h1 className="about-heading">What happens in Estonia Experience?</h1>
-            <div className="images-slider" style={{ overflowX: "scroll" }}>
+            <div className="images-slider">
                 <div ref={imagesContRef} className="images-slider-cont">
                     {images && images.map((image, index) => {
                         return (
-                            <div 
+                            <div
                             ref={e => singleImageRef.current[index] = e}> 
                                 <img className="image-model" alt="" src={image.url} />
                             </div>

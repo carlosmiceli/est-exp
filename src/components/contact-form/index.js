@@ -24,7 +24,7 @@ const ContactForm = () => {
         e.target[3].value = ""
         setTimeout(() => {
             handleClose()
-        }, 4000);
+        }, 4000000);
     }
 
     return (
@@ -33,7 +33,7 @@ const ContactForm = () => {
             <div className={`modal-question ${openModalQuestion ? "modal-question-open" : ""}`}>
                 <div className="modal-question-filter">
                     <h4 className="modal-question-text">
-                        Thank you! We will get back to you soon.
+                        Thank you! <br/>We will get back to you soon.
                     </h4>
                 </div>
             </div>

@@ -3,6 +3,10 @@
     margin: 50px auto;
 }
 
+.form-cont h1 {
+   font-size: 34px;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -28,9 +32,14 @@ button {
     padding: 10px 15px;
 }
 
+.form-control {
+    border-radius: 3px;
+    border-style: none;
+    margin-bottom: 8px;
+}
 
 .modal-question {
-    top: 200px;
+    top: 350px;
     left: 0;
     right: 0;
     width: 85%;
@@ -63,7 +72,7 @@ button {
 }
 
 .modal-question-filter {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     position: relative;
 }
@@ -92,11 +101,82 @@ button {
     border-left-style: none;
     transform: scale3d(1none, 1none, 1none) translate(0px, 0px);
     color: hsla(0, 0.00%, 100.00%, 1.00);
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 26px;
     text-align: center;
     text-shadow: 1px 1px 1px black;;
     transition: opacity .4s ease-in .3s;
     opacity: 1;
 }
 
+@media only screen and (min-width: 400px) {
+    .form-cont {
+        width: 70%;
+    }   
+
+    .form-control {
+        font-size: 15px;
+    }
+
+    .modal-question-filter {
+        width: 95%;
+    }
+
+    .modal-question-text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .modal-question-filter {
+        width: 75%;
+    }
+
+    .modal-question-text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+   
+}
+
+@media only screen and (min-width: 750px) {
+    .form-cont {
+        width: 60%;
+    }   
+
+    .modal-question {
+        width: 70%;
+    }
+   
+}
+
+@media only screen and (min-width: 1000px) {
+    .form-cont {
+        width: 50%;
+    }  
+    
+    .modal-question {
+        width: 60%;
+    }
+
+    .modal-question-text {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .form-cont {
+        width: 40%;
+    }   
+
+    .modal-question {
+        width: 50%;
+    }
+
+    .modal-question-text {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}

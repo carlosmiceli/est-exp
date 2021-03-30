@@ -75,3 +75,51 @@
     font-size: 14px;
     font-weight: 600;
 }
+
+@media only screen and (min-width: 500px) {
+    .logo img {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .logo img {
+        width: 50%;
+    }
+
+    .popover-cont {
+        width: 25%;
+        position: relative;
+    }
+
+    .popover {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .popover {
+        font-size: 15px;
+        line-height: 21px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .companies-logos {
+        width: 70%;
+    }
+    
+    .logo img {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .popover-cont {
+        width: 20%;
+        position: relative;
+    }
+
+}

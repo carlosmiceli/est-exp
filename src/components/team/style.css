@@ -7,21 +7,22 @@
 
 .team-col {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .team-member {
-    width: 45%;
+    width: 85%;
     display: flex;
     flex-direction: column;
-    margin: 40px auto;
+    margin: 20px auto;
     border-radius: 20px;
     background-color: white;
 }
 
 .team-pic {
     margin: 0 auto;
-    height: 170px;
+    height: 200px;
     padding-top: 30px;
     border-radius: 80px;
 }
@@ -31,45 +32,44 @@
     font-size: 14px;
     text-align: left;
     padding: 10px 15px;
-    line-height: 20px;
+    line-height: 22px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
+    .team-bio {
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
 
-    .team-cont {
-        width: 70%;
-        margin: 100px auto;
-        padding-top: 70px;
-        display: flex;
-        flex-direction: column;
+@media only screen and (min-width: 700px) {
+    .team-col {
+        flex-direction: row;
     }
 
     .team-member {
-        display: flex;
-        width: 100%;
-        margin: 40px auto;
+        margin: 20px 10px;
     }
+}
 
-    .team-pic {
-        border-radius: 20px;
-        background-size: auto, cover;
+@media only screen and (min-width: 1200px) {
+    .team-cont {
+        width: 75%;
     }
-
-    #carlos {
-        height: 300px;
-        width: 1200px;
-        background-image: linear-gradient(130deg, rgba(255, 255, 255, 0.212), rgba(63, 148, 245, 0.322)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/Carlos%20Miceli%20Avatar.jpg?alt=media&token=04eacce4-9aa5-495d-a431-3fc526ee0755);
-    }
-
-    #kadri {
-        height: 300px;
-        width: 1200px;
-        background-image: linear-gradient(130deg, rgba(255, 255, 255, 0.212), rgba(63, 112, 245, 0.26)), url(https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/qLpd6Bfw%20copy.jpg?alt=media&token=a34073fb-e4d6-457b-b286-72f9772bce6f);
-    }
-
+    
     .team-bio {
-        text-align: left;
-        padding: 20px 50px;
-        line-height: 25px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .team-cont {
+        width: 60%;
+    }
+    
+    .team-bio {
+        font-size: 15px;
+        line-height: 23px;
     }
 }
