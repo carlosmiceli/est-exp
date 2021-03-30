@@ -50,8 +50,8 @@ Carlos Miceli ([Github](https://github.com/carlosmiceli), [Linkedin](https://ar.
 
 Feel free to email me (Carlos) at [me@carlosmiceli.com](me@carlosmiceli.com) for anything related to this project.
 
-<img width="1280" alt="Screen Shot 2021-03-30 at 1 02 00 AM" src="https<img width="741" alt="Screen Shot 2021-03-30 at 1 09 06 AM" src="https://user-images.githubusercontent.com/1166066/112932620-9ae43880-90f4-11eb-826c-af923ceb45f9.png">
-://user-images.githubusercontent.com/1166066/112932434-4771ea80-90f4-11eb-9e9e-803612f1e0e4.png">
+<img width="1280" alt="Screen Shot 2021-03-30 at 1 02 00 AM" src="https://user-images.githubusercontent.com/1166066/112932434-4771ea80-90f4-11eb-9e9e-803612f1e0e4.png">
+<img width="741" alt="Screen Shot 2021-03-30 at 1 09 06 AM" src="https://user-images.githubusercontent.com/1166066/112932620-9ae43880-90f4-11eb-826c-af923ceb45f9.png">
 <img width="627" alt="Screen Shot 2021-03-30 at 1 09 39 AM" src="https://user-images.githubusercontent.com/1166066/112932628-a0418300-90f4-11eb-928c-95d48d61c308.png">
 <img width="1280" alt="Screen Shot 2021-03-30 at 1 02 17 AM" src="https://user-images.githubusercontent.com/1166066/112932467-535dac80-90f4-11eb-8844-b95f52245af6.png">
 <img width="1280" alt="Screen Shot 2021-03-30 at 1 02 25 AM" src="https://user-images.githubusercontent.com/1166066/112932481-59ec2400-90f4-11eb-8007-8ceb7560caf8.png">
