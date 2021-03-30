@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Landing Page for Estonia Experience
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As one of the founders of Estonia Experience, a company that helps people immerse themselves in the country that Wired magazine called in 2016 "the most advanced digital society in the world," I wanted to code from scratch our presentation website.
 
-## Available Scripts
+It's 
 
 In the project directory, you can run:
 
