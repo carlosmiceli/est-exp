@@ -9,7 +9,7 @@ const Included = () => {
                 <ul>
                     <li className="included-item">
                         <img src="https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/icons%2Fbed.png?alt=media&token=8a51adc7-4ec2-4a8e-aa8e-dd311b9becf4"/>
-                        <p>Accommodation in a centrally located hotel or apartment with private room</p>
+                        <p>Accommodation in a centrally located hotel with private room</p>
                     </li>
                     <li className="included-item">
                         <img src="https://firebasestorage.googleapis.com/v0/b/estonia-experience.appspot.com/o/icons%2Fbreakfast.png?alt=media&token=e18944f5-c30a-4865-9b53-95247e0bf7ba"/>

@@ -25,6 +25,27 @@
     display: none;
   }
 
+.glow {
+    position: absolute;
+    margin-left: 100%;
+    width: 1px;
+    opacity: 0.5;
+    z-index: 10;
+    height: 300px;
+    border-radius: 100px;
+    background-color: #ccc;
+    animation: glow 0.6s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 60px -60px white;
+    }
+    to {
+        box-shadow: 0 0 60px 60px white;
+    }
+}
+
 .cards-slider-cont {
     position: relative;
     display: flex;
@@ -32,31 +53,33 @@
 }
 
 .card-model {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 325px;
     justify-self: center;
     margin-right: -10px;
     display: flex;
     border-radius: 20px;
     box-shadow: -10px 10px 5px rgba(66, 50, 50, 0.5);
-    align-items: flex-end;
+    align-items: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 1;
+    z-index: 1;
 }
 
 .text-filter {
     width: 85%;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-top: 100px;
     border-radius: 5px;
+    // background-color: "#B6DAF6"; 
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .text-filter {
       -webkit-backdrop-filter: blur(20px);
-      backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);   
     }
   }
 
@@ -65,7 +88,7 @@
     z-index: 0;
     margin: 0 auto;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
@@ -73,26 +96,11 @@
     transform: scale3d(1none, 1none, 1none) translate(0px, 0px);
     color: hsla(0, 0.00%, 100.00%, 1.00);
     font-size: 20px;
-    line-height: 28px;
+    line-height: 26px;
     text-align: center;
     text-shadow: 1px 1px 1px black;;
     transition: opacity .4s ease-in .3s;
     opacity: 1;
-}
-
-@media only screen and (max-width: 350px) {
-    
-    .card-model {
-        width: 250px;
-        height: 325px;
-        background-position: 65% 50%;
-    }
-
-    .card-quote {
-        padding: 5px;
-        font-size: 14px;
-        line-height: 22px;
-    }
 }
 
 @media only screen and (min-width: 351px) {
@@ -104,9 +112,9 @@
     }
 
     .card-quote {
-        padding: 5px;
-        font-size: 16px;
-        line-height: 24px;
+        padding: 6px;
+        font-size: 24px;
+        line-height: 32px;
     }
 }
 
@@ -118,16 +126,27 @@
     }
 
     .card-quote {
-        padding: 5px;
-        font-size: 18px;
-        line-height: 26px;
+        padding: 7px;
+        font-size: 26px;
+        line-height: 34px;
     }
+
+    .glow {
+        height: 350px;
+    }
+
 }
 
 @media only screen and (min-width: 551px) {
     .card-model {
         width: 450px;
         height: 375px;
+    }
+
+    .card-quote {
+        padding: 8px;
+        font-size: 28px;
+        line-height: 36px;
     }
 }
 
@@ -139,6 +158,16 @@
     .cards-slider-cont {
         transform: translateX(15vw);
     }
+
+    .card-quote {
+        padding: 9px;
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .glow {
+        height: 400px;
+    }
 }
 
 @media only screen and (min-width: 801px) {
@@ -147,6 +176,10 @@
     }
     .cards-cont {
         margin: 250px 0;
+    }
+
+    .card-quote {
+        padding: 10px;
     }
 }
 

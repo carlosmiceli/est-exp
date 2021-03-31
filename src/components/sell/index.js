@@ -46,9 +46,9 @@ const Sell = () => {
                 <div className="sell-option">
                     <h3>2022 <br/>Summer Edition</h3>
                     <div className="sell-description">
-                        <p>Dates: TBD</p>
-                        <p>Price: US$ TBD</p>
-                        <p>Applications open until <br/> TBD, 2022</p>
+                        <p>Dates: May 8th to May 15th, 2022</p>
+                        <p>Only 15 slots available</p>
+                        <p>Price: €3190<br/><span style={{fontSize: "12px"}}>Ask us about payment plans</span></p>
                     </div>
                     <div className={`${apply ? "apply-disappear" : "apply-visible"}`}>
                         <button onClick={switchApply} className="apply-button">Apply</button>

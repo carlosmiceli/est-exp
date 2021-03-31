@@ -20,8 +20,8 @@ function App() {
         <About />
         <Testimonials />
         <Companies />
-        <Sell />
         <Included />
+        <Sell />
         <Team />
         <ContactForm />
         <Footer />

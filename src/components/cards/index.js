@@ -157,17 +157,20 @@ const Cards = () => {
         <div id="why-estonia" className="cards-cont">
             <div className="scroll-margin" />
             <h1 className="cards-heading">Why Estonia?</h1>
+            <div className="glow" />
             <div className="cards-slider" onScroll={onScroll}>
                 <div ref={cardsContRef} className="cards-slider-cont">
                     {cards && cards.map((card, index) => {
                         return (
-                            <div 
-                            id={card.name}
-                            ref={e => singleCardRef.current[index] = e} 
-                            className="card-model" 
-                            style={{backgroundImage: 'url(' + card.image + ')'}}>
-                                <div className="text-filter">
-                                    <p className="card-quote">{card.text}</p>
+                            <div>
+                                <div 
+                                id={card.name}
+                                ref={e => singleCardRef.current[index] = e} 
+                                className="card-model" 
+                                style={{backgroundImage: 'url(' + card.image + ')'}}>
+                                        <div className="text-filter">
+                                            <p className="card-quote">{card.text}</p>
+                                        </div>
                                 </div>
                             </div>
                         )

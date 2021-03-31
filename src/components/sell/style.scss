@@ -17,11 +17,11 @@
     display: flex;
     flex-direction: column;
     margin: 30px auto;
-    padding: 0 15px;
+    padding: 0 20px;
     border-radius: 20px;
     background-color: white;
     font-size: 22px;
-    color: gray;
+    color: black;
     font-weight: 100;
     text-align: center;
     line-height: 24px;
@@ -49,7 +49,7 @@
 }
 
 .sell-description a {
-    color: gray;
+    color: black;
     font-weight: 500;
 }
 
@@ -89,7 +89,7 @@
     border: none;
     border-bottom: solid;
     border-width: 1px;
-    color: #808080;
+    color: black;
 }
 
 .modal-apply {

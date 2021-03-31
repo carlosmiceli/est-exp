@@ -20,11 +20,11 @@
     background-repeat: no-repeat;
     display: block;
     z-index: -1;
-    filter        : blur(1px) contrast(60%);
-    -moz-filter   : blur(1px) contrast(60%);
-    -webkit-filter: blur(1px) contrast(60%);
-    -ms-filter    : blur(1px) contrast(60%);
-    -o-filter     : blur(1px) contrast(60%);
+    filter        : contrast(75%);
+    -moz-filter   : contrast(75%);
+    -webkit-filter: contrast(75%);
+    -ms-filter    : contrast(75%);
+    -o-filter     : contrast(75%);
 }
 
 .hero-column-2 {
@@ -46,16 +46,17 @@
 }
 
 .hero-button {
-    color: white;
-    font-family: 'Euclid Circular B';
-    margin-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 30px;
-    border: none;
-    border-radius: 20px;
-    background-color: hsla(208.00000000000003, 39.73%, 0.00%, 1.00);
-    font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: 'Euclid Circular B';
+  margin-top: 40px;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: hsla(208.00000000000003, 39.73%, 0.00%, 1.00);
+  font-size: 18px;
 }
 
 .hero-button:focus {
@@ -255,6 +256,10 @@
         z-index: 2;
     }
     
+    .hero-button {
+      margin-left: 20px;
+    }
+
     .hero-column-2 {
         display: flex;
         width: 50%;
@@ -288,12 +293,26 @@
     line-height: 62px;
     font-weight: 600;
   }
+
+  .hero-button {
+    margin-left: 40px;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .hero-heading {
     font-size: 56px;
     line-height: 66px;
     font-weight: 600;
+  }
+
+  .hero-button {
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .hero-button {
+    margin-left: 80px;
   }
 }
 
@@ -306,5 +325,9 @@
     font-size: 68px;
     line-height: 74px;
     font-weight: 600;
+  }
+
+  .hero-button {
+    margin-left: 100px;
   }
 }
