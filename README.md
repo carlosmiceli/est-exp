@@ -28,7 +28,7 @@ As one of the founders of Estonia Experience, a company that helps people immers
 To run this project, install it locally using npm:
 
 ```
-$ cd ../bnbestweb
+$ cd ../est-exp
 $ npm install
 $ npm start
 ```
