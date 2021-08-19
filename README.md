@@ -1,6 +1,6 @@
 # Landing Page for Estonia Experience
 
-Responsive website created with Node.js, React, Firebase and Zapier.
+Responsive website created with vanilla Javascript, Node.js, React, Firebase and Zapier.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ Responsive website created with Node.js, React, Firebase and Zapier.
 As one of the founders of Estonia Experience, a company that helps people immerse themselves in the "the most advanced digital society in the world," I wanted to code from scratch our presentation website that allows people to learn about the business and apply as a participant.
 
 #### What was accomplished from the project scope
-* Wrote almost all code without relying on libraries, with the exception of React Bootstrap for Forms.
+* Wrote most code without relying on libraries, with the exception of React Bootstrap for Forms.
 * Responsive and modern-looking website.
 * Successfully implemented multiples types of animations with JS and CSS.
 * Ability for visitors to apply and leave questions.
