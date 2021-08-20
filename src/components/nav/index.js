@@ -49,7 +49,7 @@ const Nav = () => {
         <a className='nav-link' href='#companies'>Companies</a>
         <a className='nav-link' href='#join-us'>Apply</a>
         <a className='nav-link' href='#team'>Team</a>
-        <a className='nav-link' href="https://www.instagram.com/p/BxhU2YKAHd8/" target="_blank">Instagram</a>
+        {/* <a className='nav-link' href="https://www.instagram.com/p/BxhU2YKAHd8/" target="_blank">Instagram</a> */}
         <a className='nav-link' href='#contact-us'>Contact</a>
       </div>
       <div className="alert-cont">
@@ -65,7 +65,7 @@ const Nav = () => {
             <a className='nav-link' href='#companies'>Companies</a>
             <a className='nav-link' href='#join-us'>Apply</a>
             <a className='nav-link' href='#team'>Team</a>
-            <a className='nav-link' href="https://www.instagram.com/p/BxhU2YKAHd8/" target="_blank">Instagram</a>
+            {/* <a className='nav-link' href="https://www.instagram.com/p/BxhU2YKAHd8/" target="_blank">Instagram</a> */}
             <a className='nav-link' href='#contact-us'>Contact</a>
           </div>
         </div>
